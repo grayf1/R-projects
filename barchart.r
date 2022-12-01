@@ -15,8 +15,26 @@ head(mtcars)
 # does data frames
 # 2. created table will be stored in an object
 
-# get R documenation on table function 
+# get R documenation on table function
 ?table
 
-# create table and store it in an object 
-cylinder<- table(mtcars$cyl)
+# create table and store it in an object
+cylinders <- table(mtcars$cyl)
+
+# give bar plot function cylinders object
+# x-axis is telling us the different types of cylinders
+# y-axis is telling us the number of data points in
+# each type of cylinder
+barplot(cylinders)
+
+# give bar plot function the cylinders object
+# and option
+barplot(cylinders,
+    col = "blue", # blue bar color
+    main = "Mtcars Cylinder Data", # main title
+    xlab = "Cylinders", # x-axis label
+    ylab = "Number" # y-axis label
+)
+
+# clear the cylinders object from the gloabl environmwent 
+rm(list = ls())

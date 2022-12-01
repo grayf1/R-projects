@@ -13,5 +13,3 @@ title(main="Autos", col.main="red", font.main=4)
 
 library()
 search()
-
-
